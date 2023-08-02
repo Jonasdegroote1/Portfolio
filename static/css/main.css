@@ -1,0 +1,109 @@
+:root {
+	--color-light: hsl(43, 33%, 96%);
+	--color-dark: hsl(0, 0%, 11%);
+	--color-lightblue: hsl(197, 88%, 69%);
+	--color-darkblue: hsl(197, 95%, 36%);
+	--color-white: hsl(0, 0%, 100%);
+
+	--font-title: "Inter", serif;
+	--font-body: "Fira", sans-serif;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../../../static/fonts/Inter Bold.woff2") format("woff2"),
+		url("../../../static/fonts/Inter Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-E0D0;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../../../static/fonts/Inter Regular.woff2") format("woff2"),
+		url("../../../static/fonts/Inter Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-E0D0;
+}
+
+@font-face {
+	font-family: "Fira";
+	src: url("../../../static/fonts/Fira Sans Bold.woff2") format("woff2"),
+		url("../../../static/fonts/Fira Sans Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2212;
+}
+
+@font-face {
+	font-family: "Fira";
+	src: url("../../../static/fonts/Fira Sans Regular.woff2") format("woff2"),
+		url("../../../static/fonts/Fira Sans Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2212;
+}
+
+body {
+	font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-title);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2rem 5rem;
+	background-color: var(--color-lightblue);
+}
+
+@media (min-width: 768px) {
+	header {
+		flex-direction: row;
+	}
+}
+
+header img {
+	width: 5rem;
+	aspect-ratio: 1/1;
+}
+
+header img:hover {
+	background-color: aliceblue;
+}
+
+header nav ul {
+	display: flex;
+
+	& a {
+		padding: 1rem;
+		color: var(--color-dark);
+		font-size: 1rem;
+		text-decoration: none;
+	}
+}
+
+header nav ul a:hover {
+	color: var(--color-light);
+	font-weight: 700;
+}
