@@ -35,4 +35,5 @@ header nav ul {
 
 header nav ul a:hover {
 	color: var(--color-light);
+	font-weight: 700;
 }
