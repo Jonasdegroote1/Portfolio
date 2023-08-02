@@ -1,0 +1,10 @@
+:root {
+	--color-light: hsl(43, 33%, 96%);
+	--color-dark: hsl(0, 0%, 11%);
+	--color-lightblue: hsl(197, 88%, 69%);
+	--color-darkblue: hsl(197, 95%, 36%);
+	--color-white: hsl(0, 0%, 100%);
+
+	--font-title: "Inter", serif;
+	--font-body: "Fira", sans-serif;
+}
