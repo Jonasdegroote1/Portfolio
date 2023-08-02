@@ -11,8 +11,8 @@
 
 @font-face {
 	font-family: "Inter";
-	src: url("../../../static/fonts/Inter Bold.woff2") format("woff2"),
-		url("../../../static/fonts/Inter Bold.woff") format("woff");
+	src: url("../fonts/Inter\ Bold.woff2") format("woff2"),
+		url("../fonts/Inter\ Bold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
@@ -21,8 +21,8 @@
 
 @font-face {
 	font-family: "Inter";
-	src: url("../../../static/fonts/Inter Regular.woff2") format("woff2"),
-		url("../../../static/fonts/Inter Regular.woff") format("woff");
+	src: url("../fonts/Inter\ Regular.woff2") format("woff2"),
+		url("../fonts/Inter\ Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;
@@ -31,8 +31,8 @@
 
 @font-face {
 	font-family: "Fira";
-	src: url("../../../static/fonts/Fira Sans Bold.woff2") format("woff2"),
-		url("../../../static/fonts/Fira Sans Bold.woff") format("woff");
+	src: url("../fonts/Fira\ Sans\ Bold.woff2") format("woff2"),
+		url("../fonts/Fira\ Sans\ Bold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
@@ -41,8 +41,8 @@
 
 @font-face {
 	font-family: "Fira";
-	src: url("../../../static/fonts/Fira Sans Regular.woff2") format("woff2"),
-		url("../../../static/fonts/Fira Sans Regular.woff") format("woff");
+	src: url("../fonts/Fira\ Sans\ Regular.woff2") format("woff2"),
+		url("../fonts/Fira\ Sans\ Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;
