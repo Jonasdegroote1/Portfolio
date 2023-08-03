@@ -73,19 +73,24 @@ header {
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 2rem 5rem;
 	background-color: var(--color-lightblue);
-}
-
-@media (min-width: 768px) {
-	header {
-		flex-direction: row;
-	}
+	height: 6.25rem;
+	padding: 1rem;
 }
 
 header img {
-	width: 5rem;
+	width: 2rem;
 	aspect-ratio: 1/1;
+}
+
+@media (min-width: 30rem) {
+	header {
+		flex-direction: row;
+		padding: 2rem 5rem;
+	}
+	header img {
+		width: 5rem;
+	}
 }
 
 header img:hover {
