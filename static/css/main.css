@@ -160,7 +160,7 @@ header nav ul a:hover {
 	display: block;
 	height: 100%;
 	padding-left: 1rem;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: var(--color-lightblue);
 	animation: spin_words 5s infinite;
 	font-family: var(--font-title);
@@ -178,10 +178,10 @@ header nav ul a:hover {
 		transform: translateY(0);
 	}
 	50% {
-		transform: translateY(-90%);
+		transform: translateY(-10%);
 	}
 	100% {
-		transform: translateY(-190%);
+		transform: translateY(-110%);
 	}
 }
 
@@ -196,6 +196,7 @@ header nav ul a:hover {
 
 .about-left {
 	height: 50%;
+	width: 100%;
 }
 
 @media (min-width: 30rem) {
