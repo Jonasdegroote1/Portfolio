@@ -196,7 +196,6 @@ header nav ul a:hover {
 
 .about-left {
 	height: 50%;
-	width: 100vw;
 }
 
 @media (min-width: 30rem) {
@@ -211,6 +210,8 @@ header nav ul a:hover {
 }
 .about-left img {
 	height: 100%;
+	width: 100%;
+
 	object-fit: cover;
 }
 
