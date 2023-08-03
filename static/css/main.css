@@ -194,9 +194,8 @@ header nav ul a:hover {
 	background-color: var(--background-lightblue);
 }
 
-.about-left img {
+.about-left {
 	height: 50%;
-	object-fit: cover;
 }
 
 @media (min-width: 30rem) {
