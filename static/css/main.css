@@ -160,7 +160,7 @@ header nav ul a:hover {
 	display: block;
 	height: 100%;
 	padding-left: 1rem;
-	font-size: 1.2rem;
+	font-size: 2rem;
 	color: var(--color-lightblue);
 	animation: spin_words 5s infinite;
 	font-family: var(--font-title);
@@ -169,7 +169,7 @@ header nav ul a:hover {
 
 @media (min-width: 30rem) {
 	.words span {
-		font-size: 3.5rem;
+		font-size: 4rem;
 	}
 }
 
@@ -194,6 +194,11 @@ header nav ul a:hover {
 	background-color: var(--background-lightblue);
 }
 
+.about-left img {
+	height: 50%;
+	object-fit: cover;
+}
+
 @media (min-width: 30rem) {
 	.about {
 		flex-direction: row;
@@ -203,11 +208,10 @@ header nav ul a:hover {
 		width: 50%;
 		height: 100%;
 	}
-}
-
-.about-left img {
-	height: 100%;
-	object-fit: cover;
+	.about-left img {
+		height: 100%;
+		object-fit: cover;
+	}
 }
 
 .about-right {
