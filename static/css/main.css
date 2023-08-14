@@ -81,7 +81,7 @@ header {
 	height: 6.25rem;
 	padding: 1rem;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	z-index: 1;
 }
 
@@ -251,4 +251,56 @@ header nav ul a:hover {
 
 .slider {
 	background-color: var(--color-darkblue);
+}
+
+/* all projects */
+
+.projects {
+	width: 100%;
+	padding: 2rem;
+}
+
+.projects h2 {
+	padding-bottom: 2rem;
+}
+
+.project_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 3rem;
+}
+
+.project_list li {
+	width: 100%;
+}
+@media (min-width: 48rem) {
+	.project_list li {
+		width: 45%;
+	}
+}
+
+@media (min-width: 64rem) {
+	.project_list li {
+		width: 30%;
+	}
+}
+
+.cards {
+	width: 100%;
+	display: block;
+	border: solid 2px var(--color-darkblue);
+	border-radius: 0.625rem;
+	background-color: var(--color-lightblue);
+	filter: drop-shadow(5px 5px 4px var(--color-darkblue));
+	color: var(--color-dark);
+	text-decoration: none;
+}
+
+.top_card img {
+	border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.bottom_card {
+	padding: 1rem;
 }
