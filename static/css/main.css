@@ -53,6 +53,7 @@
 
 body {
 	font-family: var(--font-body);
+	background-color: var(--color-light);
 }
 
 h1,
@@ -299,8 +300,38 @@ header nav ul a:hover {
 
 .top_card img {
 	border-radius: 0.625rem 0.625rem 0 0;
+	width: 100%;
+	aspect-ratio: 2/1;
+	object-fit: cover;
 }
 
 .bottom_card {
 	padding: 1rem;
+}
+
+.detail {
+	top: 6.25rem;
+	width: 100%;
+	background-color: var(--color-light);
+	position: fixed;
+	z-index: 2;
+	right: -100vw;
+	height: 100vh;
+	padding: 5rem 2rem;
+	overflow-y: scroll;
+}
+
+@media (min-width: 48rem) {
+	.detail {
+		width: 50%;
+	}
+}
+
+.open {
+	right: 0;
+}
+
+.btn {
+	z-index: 2;
+	top: 20;
 }
