@@ -101,10 +101,6 @@ header img {
 	}
 }
 
-header img:hover {
-	background-color: aliceblue;
-}
-
 header nav ul {
 	display: flex;
 
@@ -294,8 +290,13 @@ header nav ul a:hover {
 	border-radius: 0.625rem;
 	background-color: var(--color-lightblue);
 	filter: drop-shadow(5px 5px 4px var(--color-darkblue));
-	color: var(--color-dark);
+	color: var(--color-light);
 	text-decoration: none;
+}
+.cards:nth-child(even) {
+	border: solid 2px var(--color-lightblue);
+	background-color: var(--color-darkblue);
+	filter: drop-shadow(5px 5px 4px var(--color-lightblue));
 }
 
 .top_card img {
