@@ -7,10 +7,52 @@
 		"url": "#"
 	},
 	{
-		"name": "api project",
+		"name": "Gentse Feesten",
 		"img": "static/images/coding.jpg",
 		"description": "test project",
-		"type": "drawing",
+		"type": "coding",
+		"url": "#"
+	},
+	{
+		"name": "concertplanner",
+		"img": "static/images/coding.jpg",
+		"description": "test project",
+		"type": "coding",
+		"url": "#"
+	},
+	{
+		"name": "interactive agancy website",
+		"img": "static/images/coding.jpg",
+		"description": "test project",
+		"type": "coding",
+		"url": "#"
+	},
+	{
+		"name": "3D-Printing/modeling",
+		"img": "static/images/coding.jpg",
+		"description": "test project",
+		"type": "3D",
+		"url": "#"
+	},
+	{
+		"name": "photoshop",
+		"img": "static/images/coding.jpg",
+		"description": "test project",
+		"type": "photoshop",
+		"url": "#"
+	},
+	{
+		"name": "stopmotion",
+		"img": "static/images/coding.jpg",
+		"description": "test project",
+		"type": "video",
+		"url": "#"
+	},
+	{
+		"name": "labelicious",
+		"img": "static/images/coding.jpg",
+		"description": "test project",
+		"type": "design",
 		"url": "#"
 	}
 ]

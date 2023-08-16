@@ -10,6 +10,7 @@ const PROJECTS = "static/data/projects.json";
 			this.$projects = document.getElementById("projects");
 			this.$projectDetails = document.getElementById("project-detail");
 			this.$details = document.getElementById("detail");
+			this.$category = document.getElementById("category");
 		},
 
 		buildUI() {
@@ -21,10 +22,12 @@ const PROJECTS = "static/data/projects.json";
 			fetch(PROJECTS)
 				.then((response) => response.json())
 				.then((projects) => {
-					const htmlStr = this.getHTMLForProjectsData(projects);
+					let htmlStr = this.getHTMLForProjectsData(projects);
 					this.$projects.innerHTML = htmlStr;
+					let $items = this.$projects.querySelectorAll(".cards");
 
-					const $items = this.$projects.querySelectorAll(".cards");
+					// htmlStr = this.getHTMLForCategory(projects);
+					// this.$category.innerHTML = htmlStr;
 
 					for (const $item of $items) {
 						$item.addEventListener("click", (e) => {
@@ -45,12 +48,23 @@ const PROJECTS = "static/data/projects.json";
 						</div>
 						<div class="bottom_card">
 							<h3>${project.name}</h3>
-							
+						<p>${project.type}</p>
 						</div>
 					</li>`;
 				})
 				.join("");
 		},
+
+		// getHTMLForCategory(categories) {
+		// 	return categories
+		// 		.map((category) => {
+		// 			return `
+		//       <li>
+		// 				${category.type}
+		// 			</li>`;
+		// 		})
+		// 		.join("");
+		// },
 
 		generateOverflow() {
 			fetch(PROJECTS)
