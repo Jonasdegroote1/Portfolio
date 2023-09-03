@@ -1,58 +1,58 @@
 [
 	{
-		"name": "bijloke project",
-		"img": "static/images/coding.jpg",
-		"description": "test project",
-		"type": "coding",
-		"url": "#"
-	},
-	{
+		"id": "1",
 		"name": "Gentse Feesten",
-		"img": "static/images/coding.jpg",
-		"description": "test project",
+		"img": "static/images/gentse_feesten.png",
+		"description": "For this project, we needed to recreate the website of the gentse feesten. I used JavaScript to make this website as dynamic as possible. ",
 		"type": "coding",
 		"url": "#"
 	},
 	{
+		"id": "2",
 		"name": "concertplanner",
-		"img": "static/images/coding.jpg",
-		"description": "test project",
+		"img": "static/images/bijloke.png",
+		"description": "Users can draw up a stage plans to scale in our Concert Hall. This must be very accessible and without licenses on drawing programs. The projects must be easily shareable in an editable version and as a final PDF document. Thus, the purpose of the tool should guarantee more efficient preparation, and its creator doesn't have to be a technical drawing professional ",
 		"type": "coding",
 		"url": "#"
 	},
 	{
+		"id": "3",
 		"name": "interactive agancy website",
-		"img": "static/images/coding.jpg",
-		"description": "test project",
+		"img": "static/images/interactive-agency.png",
+		"description": "For this project, we needed to recreate the website of an agency website that has a lot of web animations in it. We used gsap to make these animations. There  are different types of animations on the site such as a fade-in, scroll animation that also changes the color of the site.",
 		"type": "coding",
 		"url": "#"
 	},
 	{
+		"id": "4",
 		"name": "3D-Printing/modeling",
-		"img": "static/images/coding.jpg",
-		"description": "test project",
+		"img": "static/images/dragon.png",
+		"description": "In my spare time I like to make 3D models and print them. I use the program Blender to make these models. I also use the program Cura to print the models. I have already made a few models, but I am still learning to make more complex models. I have already made a dragon, a vase. I have also made a few other models, but I have not printed them yet. I have also made a few models for my school assignments.",
 		"type": "3D",
-		"url": "#"
+		"url": ""
 	},
 	{
+		"id": "5",
 		"name": "photoshop",
-		"img": "static/images/coding.jpg",
-		"description": "test project",
+		"img": "static/images/photoshop.png",
+		"description": "",
 		"type": "photoshop",
-		"url": "#"
+		"url": ""
 	},
 	{
+		"id": "6",
 		"name": "stopmotion",
-		"img": "static/images/coding.jpg",
-		"description": "test project",
+		"img": "static/images/stopmotion.png",
+		"description": "For this assignment, we had to make a stop motion video that had to be one minute long. That is to say, by placing the pictures one after the other, you get a nice flow of the images you have drawn. There had to be about 12 images per second, which meant that we had to take at least 720 images in order to get a nice flow of the video.Before you can start the production, you must of course write a scenario. Then you make a storyboard of the scenario, which you can find below. For my subject, I came up with a transport company that goes to another planet to deliver a house on the other planet.I started by writing my scenario. Then I drew my storyboard with the different scenes on it. After that, I built my set with the resources I had at home. The next day, I prepared everything for shooting and took the pictures I needed. The next day, I assembled everything and finished off where necessary.",
 		"type": "video",
-		"url": "#"
+		"url": "https://vimeo.com/419232001"
 	},
 	{
+		"id": "7",
 		"name": "labelicious",
-		"img": "static/images/coding.jpg",
-		"description": "test project",
+		"img": "static/images/labelicious.png",
+		"description": "For this project we had to design a packaging for vitamins and an energy drink, these products are for elderly people. The brand we have been given is genergise. The first thing I thought when I heard the name was energy and generation. Which in my view means that they are not too old yet and can still conquer the world with these vitamins, and with the energy they have gained from the vitamins and the energy drink.",
 		"type": "design",
-		"url": "#"
+		"url": ""
 	}
 ]

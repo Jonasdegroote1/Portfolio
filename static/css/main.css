@@ -71,6 +71,9 @@ ul {
 	margin: 0;
 }
 
+a {
+	color: var(--color-light);
+}
 /* header */
 
 header {
@@ -78,7 +81,7 @@ header {
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: var(--color-lightblue);
+	background-color: var(--color-darkblue);
 	height: 6.25rem;
 	padding: 1rem;
 	position: fixed;
@@ -106,14 +109,14 @@ header nav ul {
 
 	& a {
 		padding: 1rem;
-		color: var(--color-dark);
+		color: var(--color-light);
 		font-size: 1rem;
 		text-decoration: none;
 	}
 }
 
 header nav ul a:hover {
-	color: var(--color-light);
+	color: var(--color-lightblue);
 	font-weight: 700;
 }
 
@@ -195,7 +198,7 @@ header nav ul a:hover {
 	height: 50%;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
 	.about {
 		flex-direction: row;
 	}
@@ -211,12 +214,16 @@ header nav ul a:hover {
 
 	object-fit: cover;
 }
-
 .about-right {
 	padding: 2rem;
 	& h2,
 	p {
 		padding-bottom: 1rem;
+	}
+}
+@media (min-width: 30rem) {
+	.about-right {
+		padding: 15rem 2rem;
 	}
 }
 
@@ -255,6 +262,7 @@ header nav ul a:hover {
 .projects {
 	width: 100%;
 	padding: 2rem;
+	background-color: var(--color-light);
 }
 
 .projects h2 {
@@ -293,11 +301,6 @@ header nav ul a:hover {
 	color: var(--color-light);
 	text-decoration: none;
 }
-.cards:nth-child(even) {
-	border: solid 2px var(--color-lightblue);
-	background-color: var(--color-darkblue);
-	filter: drop-shadow(5px 5px 4px var(--color-lightblue));
-}
 
 .top_card img {
 	border-radius: 0.625rem 0.625rem 0 0;
@@ -315,17 +318,10 @@ header nav ul a:hover {
 	width: 100%;
 	background-color: var(--color-light);
 	position: fixed;
-	z-index: 2;
 	right: -100vw;
 	height: 100vh;
 	padding: 5rem 2rem;
 	overflow-y: scroll;
-}
-
-@media (min-width: 48rem) {
-	.detail {
-		width: 50%;
-	}
 }
 
 .open {
@@ -334,5 +330,37 @@ header nav ul a:hover {
 
 .btn {
 	z-index: 2;
-	top: 20;
+	background-color: var(--color-light);
+	border: solid 2px var(--color-darkblue);
+	color: var(--color-darkblue);
+	padding: 0.25rem 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.left {
+	width: 100%;
+	padding-bottom: 2rem;
+}
+
+@media (min-width: 48rem) {
+	.overlay {
+		display: flex;
+	}
+	.left {
+		width: 50%;
+		padding-right: 2rem;
+	}
+	.right {
+		width: 50%;
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--color-darkblue);
+	color: var(--color-light);
+	padding: 2rem;
+	text-align: center;
 }

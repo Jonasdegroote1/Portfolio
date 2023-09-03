@@ -42,7 +42,7 @@ const PROJECTS = "static/data/projects.json";
 			return projects
 				.map((project) => {
 					return `
-          <li class="cards" data-type="${project.type}">
+          <li class="cards" data-id="${project.id}">
 						<div class="top_card">
 							<img src="${project.img}" alt="" />
 						</div>
@@ -55,17 +55,6 @@ const PROJECTS = "static/data/projects.json";
 				.join("");
 		},
 
-		// getHTMLForCategory(categories) {
-		// 	return categories
-		// 		.map((category) => {
-		// 			return `
-		//       <li>
-		// 				${category.type}
-		// 			</li>`;
-		// 		})
-		// 		.join("");
-		// },
-
 		generateOverflow() {
 			fetch(PROJECTS)
 				.then((response) => response.json())
@@ -73,16 +62,23 @@ const PROJECTS = "static/data/projects.json";
 					const $items = document.querySelectorAll(".cards");
 					for (const $item of $items) {
 						$item.addEventListener("click", (e) => {
-							const type = e.currentTarget.dataset.type;
+							const id = e.currentTarget.dataset.id;
 							const item = projects.find((project) => {
-								return project.type === type;
+								return project.id === id;
 							});
 							this.$projectDetails.classList.add("open");
 
 							this.$details.innerHTML = `
-                <img src="${item.img}">
-                <h2>${item.name}</h2>
-                <p>${item.description}</p>
+							<div class="overlay">
+								<div class="left">
+									<img src="${item.img}">
+								</div>
+								<div class="right">
+									<h2>Project ${item.name}</h2>
+									<p>${item.description}</p>
+									${item.url ? `<a href="${item.url}" target="_blank">Visit Website</a>` : ""}
+								</div>
+							</div>
               `;
 						});
 
