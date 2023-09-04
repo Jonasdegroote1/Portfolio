@@ -33,14 +33,6 @@
 	},
 	{
 		"id": "5",
-		"name": "photoshop",
-		"img": "static/images/photoshop.png",
-		"description": "",
-		"type": "photoshop",
-		"url": ""
-	},
-	{
-		"id": "6",
 		"name": "stopmotion",
 		"img": "static/images/stopmotion.png",
 		"description": "For this assignment, we had to make a stop motion video that had to be one minute long. That is to say, by placing the pictures one after the other, you get a nice flow of the images you have drawn. There had to be about 12 images per second, which meant that we had to take at least 720 images in order to get a nice flow of the video.Before you can start the production, you must of course write a scenario. Then you make a storyboard of the scenario, which you can find below. For my subject, I came up with a transport company that goes to another planet to deliver a house on the other planet.I started by writing my scenario. Then I drew my storyboard with the different scenes on it. After that, I built my set with the resources I had at home. The next day, I prepared everything for shooting and took the pictures I needed. The next day, I assembled everything and finished off where necessary.",
@@ -48,7 +40,7 @@
 		"url": "https://vimeo.com/419232001"
 	},
 	{
-		"id": "7",
+		"id": "6",
 		"name": "labelicious",
 		"img": "static/images/labelicious.png",
 		"description": "For this project we had to design a packaging for vitamins and an energy drink, these products are for elderly people. The brand we have been given is genergise. The first thing I thought when I heard the name was energy and generation. Which in my view means that they are not too old yet and can still conquer the world with these vitamins, and with the energy they have gained from the vitamins and the energy drink.",
