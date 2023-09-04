@@ -361,7 +361,6 @@ header nav ul a:hover {
 
 		& .project_list li {
 			width: 45%;
-			transition: right 0.5s ease-in-out;
 		}
 	}
 }
