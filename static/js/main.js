@@ -8,30 +8,42 @@ const PROJECTS = "static/data/projects.json";
 
 		cacheElements() {
 			this.$projects = document.getElementById("projects");
+			this.$projectList = document.getElementById("project_list");
 			this.$projectDetails = document.getElementById("project-detail");
 			this.$details = document.getElementById("detail");
-			this.$category = document.getElementById("category");
 		},
 
 		buildUI() {
 			this.fetchProjects();
-			this.generateOverflow();
 		},
 
 		fetchProjects() {
 			fetch(PROJECTS)
 				.then((response) => response.json())
 				.then((projects) => {
-					let htmlStr = this.getHTMLForProjectsData(projects);
-					this.$projects.innerHTML = htmlStr;
-					let $items = this.$projects.querySelectorAll(".cards");
+					const htmlStrForProjects = this.getHTMLForProjectsData(projects);
+					this.$projectList.innerHTML = htmlStrForProjects;
 
-					// htmlStr = this.getHTMLForCategory(projects);
-					// this.$category.innerHTML = htmlStr;
+					const $items = document.querySelectorAll(".cards");
 
 					for (const $item of $items) {
 						$item.addEventListener("click", (e) => {
-							const type = e.currentTarget.dataset.type;
+							const id = e.currentTarget.dataset.id;
+							const item = projects.find((project) => {
+								return project.id === id;
+							});
+
+							const htmlStrForDetails = this.getHTMLForDetails(item);
+							this.$details.innerHTML = htmlStrForDetails;
+
+							this.$projectDetails.classList.add("open");
+							this.$projects.classList.add("small");
+						});
+
+						const $btnClose = document.getElementById("btn");
+						$btnClose.addEventListener("click", (e) => {
+							this.$projectDetails.classList.remove("open");
+							this.$projects.classList.remove("small");
 						});
 					}
 				})
@@ -55,39 +67,23 @@ const PROJECTS = "static/data/projects.json";
 				.join("");
 		},
 
-		generateOverflow() {
-			fetch(PROJECTS)
-				.then((response) => response.json())
-				.then((projects) => {
-					const $items = document.querySelectorAll(".cards");
-					for (const $item of $items) {
-						$item.addEventListener("click", (e) => {
-							const id = e.currentTarget.dataset.id;
-							const item = projects.find((project) => {
-								return project.id === id;
-							});
-							this.$projectDetails.classList.add("open");
-
-							this.$details.innerHTML = `
-							<div class="overlay">
-								<div class="left">
-									<img src="${item.img}">
-								</div>
-								<div class="right">
-									<h2>Project ${item.name}</h2>
-									<p>${item.description}</p>
-									${item.url ? `<a href="${item.url}" target="_blank">Visit Website</a>` : ""}
-								</div>
-							</div>
-              `;
-						});
-
-						const $btnClose = document.getElementById("btn");
-						$btnClose.addEventListener("click", (e) => {
-							this.$projectDetails.classList.remove("open");
-						});
-					}
-				});
+		getHTMLForDetails(item) {
+			return `
+				<div class="overlay">
+					<div class="left">
+						<img src="${item.img}">
+					</div>
+					<div class="right">
+						<h2>Project ${item.name}</h2>
+						<p>${item.description}</p>
+						${
+							item.url
+								? `<a href="${item.url}" target="_blank">Have a better look.</a>`
+								: ""
+						}
+					</div>
+				</div>
+			  `;
 		},
 	};
 	app.initialize();

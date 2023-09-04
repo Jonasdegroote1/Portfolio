@@ -46,5 +46,20 @@
 		"description": "For this project we had to design a packaging for vitamins and an energy drink, these products are for elderly people. The brand we have been given is genergise. The first thing I thought when I heard the name was energy and generation. Which in my view means that they are not too old yet and can still conquer the world with these vitamins, and with the energy they have gained from the vitamins and the energy drink.",
 		"type": "design",
 		"url": ""
+	},
+	{
+		"id": "7",
+		"name": "my sport app",
+		"img": "static/images/sport_app.png",
+		"description": "For this project we needed to design a sport application. we build a limited responsive web application for fellow fanatics who practice this sport that contains a few features that are perfectly tailored to your target group. We had a lot of freedom in this assignment, this doesn't mean that we wont pay attention to the relevance or the idea. In this assignment we did start with a brainstorm and went true all the steps of the design thinking process.",
+		"type": "design/ux",
+		"url": "https://www.figma.com/file/dfickD8PhtmKmh6SYa9iDi/Mijn-sportieve-applicatie?type=design&node-id=22%3A399&mode=design&t=RgddKIDm90HKT4LZ-1"
+	},
+	{
+		"id": "8",
+		"name": "schrauwen groen",
+		"img": "static/images/schrauwen_groen.png",
+		"description": "For this project, we needed to recreate the website of a company called schrauwen groen. It has a few different pages that does have other layouts. I did use javascript to make some pages dynamic, the content is loaded in from a json file.",
+		"url": ""
 	}
 ]
