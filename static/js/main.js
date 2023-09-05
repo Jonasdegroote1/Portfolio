@@ -70,17 +70,24 @@ const PROJECTS = "static/data/projects.json";
 		getHTMLForDetails(item) {
 			return `
 				<div class="overlay">
-					<div class="left">
+					<div class="detail-top">
 						<img src="${item.img}">
 					</div>
-					<div class="right">
+					<div class="detail-bottom">
 						<h2>Project ${item.name}</h2>
 						<p>${item.description}</p>
-						${
+						<p>${
 							item.url
 								? `<a href="${item.url}" target="_blank">Have a better look.</a>`
 								: ""
-						}
+						}</p>
+						<p>
+						${
+							item.website
+								? `<a href="${item.website}" target="_blank">Have a look at the website.</a>`
+								: ""
+						}</p>
+						
 					</div>
 				</div>
 			  `;
