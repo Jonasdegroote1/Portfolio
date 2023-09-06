@@ -363,6 +363,16 @@ header nav ul a:hover {
 		width: 50%;
 
 		& .project_list li {
+			width: 80%;
+		}
+	}
+}
+
+@media (min-width: 69rem) {
+	.small {
+		width: 50%;
+
+		& .project_list li {
 			width: 45%;
 		}
 	}
