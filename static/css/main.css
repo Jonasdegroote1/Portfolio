@@ -6,6 +6,7 @@
 
 	--color-darkblue: hsl(197, 95%, 36%);
 	--color-white: hsl(0, 0%, 100%);
+	--color-lightgrey: hsl(0, 0.87%, 58.61%);
 
 	--font-title: "Inter", serif;
 	--font-body: "Fira", sans-serif;
@@ -73,6 +74,8 @@ ul {
 
 a {
 	color: var(--color-light);
+	text-decoration: none;
+	font-weight: 700;
 }
 /* header */
 
@@ -261,12 +264,14 @@ header nav ul a:hover {
 
 .projects {
 	width: 100%;
-	padding: 2rem;
+	padding: 5rem 2rem 10rem 2rem;
 	background-color: var(--color-light);
-}
-
-.projects h2 {
-	padding-bottom: 2rem;
+	& h2 {
+		font-size: 3rem;
+		padding-bottom: 5rem;
+		text-align: center;
+		color: var(--color-lightgrey);
+	}
 }
 
 .project_list {
@@ -295,12 +300,15 @@ header nav ul a:hover {
 .cards {
 	width: 100%;
 	display: block;
-	border: solid 2px var(--color-darkblue);
+	/* border: solid 2px var(--color-darkblue); */
 	border-radius: 0.625rem;
-	background-color: var(--color-lightblue);
-	filter: drop-shadow(5px 5px 4px var(--color-darkblue));
-	color: var(--color-light);
+	background-color: var(--color-light);
+	filter: drop-shadow(0 0 0.75rem var(--color-lightgrey));
+	color: var(--color-dark);
 	text-decoration: none;
+	& h3 {
+		color: var(--color-dark);
+	}
 }
 
 .top_card img {
@@ -311,7 +319,7 @@ header nav ul a:hover {
 }
 
 .bottom_card {
-	padding: 1rem;
+	padding: 1rem 2rem;
 }
 
 .detail {
@@ -325,6 +333,12 @@ header nav ul a:hover {
 	overflow-y: scroll;
 	border-left: solid 2px var(--color-darkblue);
 	transition: right 0.5s ease-in-out;
+	& h2 {
+		padding-bottom: 2rem;
+		text-align: left;
+		font-size: 2.2rem;
+		line-height: 1.2;
+	}
 	& p {
 		padding-bottom: 2rem;
 	}
