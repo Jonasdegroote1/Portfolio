@@ -76,18 +76,20 @@ const PROJECTS = "static/data/projects.json";
 					<div class="detail-bottom">
 						<h2>Project ${item.name}</h2>
 						<p>${item.description}</p>
-						<p>${
-							item.url
-								? `<a href="${item.url}" target="_blank">Have a better look.</a>`
-								: ""
-						}</p>
-						<p>
-						${
-							item.website
-								? `<a href="${item.website}" target="_blank">Have a look at the website.</a>`
-								: ""
-						}</p>
-						
+							<div class="links">
+							${
+								item.url
+									? `<a class="btn btn--primary" href="${item.url}" target="_blank">Look at the code 
+									<i class="fa-solid fa-chevron-right"></i></a>`
+									: ""
+							}
+							
+							${
+								item.website
+									? `<a class="btn btn--primary" href="${item.website}" target="_blank">Look at the website</a>`
+									: ""
+							}
+							</div>
 					</div>
 				</div>
 			  `;

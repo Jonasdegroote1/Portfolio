@@ -300,7 +300,6 @@ header nav ul a:hover {
 .cards {
 	width: 100%;
 	display: block;
-	/* border: solid 2px var(--color-darkblue); */
 	border-radius: 0.625rem;
 	background-color: var(--color-light);
 	filter: drop-shadow(0 0 0.75rem var(--color-lightgrey));
@@ -334,13 +333,13 @@ header nav ul a:hover {
 	border-left: solid 2px var(--color-darkblue);
 	transition: right 0.5s ease-in-out;
 	& h2 {
-		padding-bottom: 2rem;
+		padding-bottom: 0.5rem;
 		text-align: left;
 		font-size: 2.2rem;
 		line-height: 1.2;
 	}
 	& p {
-		padding-bottom: 2rem;
+		padding-bottom: 3rem;
 	}
 }
 
@@ -360,15 +359,44 @@ header nav ul a:hover {
 	background-color: var(--color-light);
 	border: solid 2px var(--color-darkblue);
 	color: var(--color-darkblue);
-	padding: 0.25rem 0.5rem;
+	padding: 0.5rem 1rem;
 	margin-bottom: 2rem;
+	border-radius: 0.625rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+	background-color: var(--color-darkblue);
+	color: var(--color-light);
+}
+
+.btn--primary {
+	padding: 1rem 2rem;
+	margin-right: 2rem;
 }
 
 .detail-top {
 	width: 100%;
 	padding-bottom: 2rem;
 }
+
+.detail-bottom {
+	padding-bottom: 2rem;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 62.5rem) {
+	.links {
+		flex-direction: row;
+	}
+}
+
 .detail-bottom a {
+	width: max-content;
 	color: var(--color-darkblue);
 }
 
