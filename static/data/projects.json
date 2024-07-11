@@ -81,6 +81,14 @@
 		"url": "https://github.com/pgmgent-2324-ixr/eindopdracht-Jonasdegroote1",
 		"type": "3D portfolio",
 		"website": "https://pgmgent-2324-ixr.github.io/eindopdracht-Jonasdegroote1/"
-	
+	},
+	{
+		"id": "11",
+		"name": "eindwerk zottegemse dakwerken",
+		"img": "static/images/zottegemse_dakwerken.png",
+		"description": "For my final project, I've chosen to work with Drupal 10, which is a new CMS system that uses PHP. I opted for this because the website needs to be easily customizable for the client. My client is a roofer who wants to regularly update photos of their work on the site to keep it current. A CMS is very convenient for managing content like this. Additionally, we were expected to include something complex, so I decided to create an inventory system. This will allow the client to easily track their warehouse inventory from their computer. The issue was that sometimes they ran short of certain materials without realizing how low the stock was. This tool will be fully integrated into the admin panel so that they can easily use it to manage and track their inventory. Drupal 10's flexibility and the ability to customize with PHP made it a suitable choice for both the client's content management needs and the implementation of a more complex feature like the inventory system.",
+		"type": "php",
+		"url": "https://github.com/Jonasdegroote1/zottegemse-dakwerken",
+		"website": "https://zottegemsedakwerken.be/"
 	}
 ]
