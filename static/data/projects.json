@@ -90,5 +90,14 @@
 		"type": "php",
 		"url": "https://github.com/Jonasdegroote1/zottegemse-dakwerken",
 		"website": "https://zottegemsedakwerken.be/"
+	},
+	{
+		"id": "12",
+		"name": "haunted house",
+		"img": "static/images/haunted_house.png",
+		"description": " for this project i did made a haunted house with a tutorial of threejs. I'm following the threejs journey course of Bruno Simon to get better in threejs. I'm still learning to make more complex models and scenes.",
+		"type": "3D",
+		"url": "https://github.com/Jonasdegroote1/16-haunted-house",
+		"website": "https://16-haunted-house-git-main-jonas-s-projects.vercel.app/"
 	}
 ]
