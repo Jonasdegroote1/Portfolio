@@ -69,7 +69,7 @@
 		"name": "3D kamer",
 		"img": "static/images/3D_room.png",
 		"description": "For this project, we needed to make a 3D room. We had to make a room with a few objects in it. This room is made is made with threejs and the objects are all made in blender.",
-		"url": "https://github.com/pgmgent-2324-iwebapp/interactive-diorama-Jonasdegroote1",
+		"url": "https://github.com/Jonasdegroote1/3D_room",
 		"type": "3D",
 		"website": "https://pgmgent-2324-iwebapp.github.io/interactive-diorama-Jonasdegroote1/#/interactive-diorama"
 	},
@@ -78,7 +78,7 @@
 		"name": "3D portfolio",
 		"img": "static/images/3D_portfolio.png",
 		"description": "For this project, we needed to make a 3D portfolio. We had to make a portfolio with a few objects in it. This portfolio is made is made with threejs and the objects are all made in blender.",
-		"url": "https://github.com/pgmgent-2324-ixr/eindopdracht-Jonasdegroote1",
+		"url": "https://github.com/Jonasdegroote1/3D_portfolio",
 		"type": "3D portfolio",
 		"website": "https://pgmgent-2324-ixr.github.io/eindopdracht-Jonasdegroote1/"
 	},
