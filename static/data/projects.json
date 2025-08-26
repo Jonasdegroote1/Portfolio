@@ -61,6 +61,7 @@
 		"name": "schrauwen groen",
 		"img": "static/images/schrauwen_groen.png",
 		"description": "For this project, we needed to recreate the website of a company called schrauwen groen. It has a few different pages that does have other layouts. I did use javascript to make some pages dynamic, the content is loaded in from a json file.",
+		"type": "website",
 		"url": "https://github.com/Jonasdegroote1/schrauwen-groen",
 		"website": "https://pgmgent-atwork-1.github.io/opdracht-1-schrauwen-groen-Jonasdegroote1/"
 	},
@@ -69,8 +70,8 @@
 		"name": "3D kamer",
 		"img": "static/images/3D_room.png",
 		"description": "For this project, we needed to make a 3D room. We had to make a room with a few objects in it. This room is made is made with threejs and the objects are all made in blender.",
-		"url": "https://github.com/Jonasdegroote1/3D_room",
-		"type": "3D",
+		"url": "https://github.com/pgmgent-2324-iwebapp/interactive-diorama-Jonasdegroote1",
+		"type": "3D website",
 		"website": "https://pgmgent-2324-iwebapp.github.io/interactive-diorama-Jonasdegroote1/#/interactive-diorama"
 	},
 	{
@@ -78,7 +79,7 @@
 		"name": "3D portfolio",
 		"img": "static/images/3D_portfolio.png",
 		"description": "For this project, we needed to make a 3D portfolio. We had to make a portfolio with a few objects in it. This portfolio is made is made with threejs and the objects are all made in blender.",
-		"url": "https://github.com/Jonasdegroote1/3D_portfolio",
+		"url": "https://github.com/pgmgent-2324-ixr/eindopdracht-Jonasdegroote1",
 		"type": "3D portfolio",
 		"website": "https://pgmgent-2324-ixr.github.io/eindopdracht-Jonasdegroote1/"
 	},
@@ -96,8 +97,17 @@
 		"name": "haunted house",
 		"img": "static/images/haunted_house.png",
 		"description": " for this project i did made a haunted house with a tutorial of threejs. I'm following the threejs journey course of Bruno Simon to get better in threejs. I'm still learning to make more complex models and scenes.",
-		"type": "3D",
+		"type": "3D, website",
 		"url": "https://github.com/Jonasdegroote1/16-haunted-house",
 		"website": "https://16-haunted-house-git-main-jonas-s-projects.vercel.app/"
+	},
+	{
+		"id": "13",
+		"name": "Badminton tournaments",
+		"img": "static/images/badminton.png",
+		"description": "A sleek and user-friendly Next.js application that enables seamless browsing of badminton tournaments. Powered by a Vercel deployment, the interface offers dynamic tournament selection and efficient performance for a smooth user experience.",
+		"type": "website",
+		"url": "https://github.com/Jonasdegroote1/badminton-tournaments",
+		"website": "https://badminton-tournaments.vercel.app/"
 	}
 ]
